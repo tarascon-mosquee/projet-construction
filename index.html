@@ -1,0 +1,353 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Mosquée de Tarascon - Projet de Construction | Association Loi 1901</title>
+    <meta name="description" content="Participez au projet de construction de la nouvelle mosquée de Tarascon. Association loi 1901 transparente, suivez l'avancement et contribuez aux dons.">
+    <meta name="keywords" content="mosquée, Tarascon, construction, dons, association, islam, financement participatif">
+    <meta name="author" content="Association Mosquée de Tarascon">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Mosquée de Tarascon - Projet de Construction">
+    <meta property="og:description" content="Participez au projet de construction de la nouvelle mosquée de Tarascon. Suivez notre avancement et contribuez.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mosquee-tarascon.github.io">
+    <meta property="og:image" content="./src/assets/images/hero.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./public/favicon.ico">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/variables.css">
+    <link rel="stylesheet" href="./src/css/layout.css">
+    <link rel="stylesheet" href="./src/css/components.css">
+    <link rel="stylesheet" href="./src/css/pages.css">
+    
+    <!-- Preload Hero Image -->
+    <link rel="preload" as="image" href="./src/assets/images/hero.jpg">
+</head>
+<body>
+    <!-- Header avec Navigation -->
+    <header id="header" class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-brand">
+                    <h1>Mosquée de Tarascon</h1>
+                </div>
+                
+                <!-- Menu Toggle pour Mobile -->
+                <button class="navbar-toggle" id="navbar-toggle" aria-label="Ouvrir le menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <!-- Navigation -->
+                <ul class="navbar-menu" id="navbar-menu">
+                    <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+                    <li><a href="#projet" class="nav-link">Le Projet</a></li>
+                    <li><a href="#financement" class="nav-link">Financement</a></li>
+                    <li><a href="#galerie" class="nav-link">Galerie</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <!-- Sections optionnelles commentées -->
+                    <!-- <li><a href="#histoire" class="nav-link">Histoire</a></li> -->
+                    <!-- <li><a href="#transparence" class="nav-link">Transparence</a></li> -->
+                    <!-- <li><a href="#chantier" class="nav-link">Chantier</a></li> -->
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Section Accueil -->
+        <section id="accueil" class="hero">
+            <div class="hero-content">
+                <div class="container">
+                    <div class="hero-text">
+                        <h2 class="hero-title">Construction de la Nouvelle Mosquée</h2>
+                        <p class="hero-subtitle">Un projet communautaire au cœur de Tarascon</p>
+                        <p class="hero-description">
+                            Ensemble, construisons un lieu de prière, de rencontre et d'échange 
+                            pour notre communauté. Rejoignez-nous dans cette belle aventure.
+                        </p>
+                        <a href="#projet" class="btn btn-primary btn-large">
+                            Découvrir le projet
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.pexels.com/photos/9470406/pexels-photo-9470406.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop" 
+                     alt="Vue d'ensemble du projet de mosquée" 
+                     loading="lazy">
+            </div>
+        </section>
+
+        <!-- Section Projet -->
+        <section id="projet" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Le Projet</h2>
+                    <p>Une mosquée moderne et accueillante pour tous</p>
+                </div>
+                
+                <div class="content-grid">
+                    <div class="content-text">
+                        <h3>Nos Objectifs</h3>
+                        <ul class="objectives-list">
+                            <li>Créer un lieu de culte moderne et accessible</li>
+                            <li>Offrir un espace de rencontre interculturelle</li>
+                            <li>Développer des activités éducatives et sociales</li>
+                            <li>Respecter l'architecture locale</li>
+                        </ul>
+                        
+                        <h3>Caractéristiques du projet</h3>
+                        <p>
+                            La nouvelle mosquée s'étendra sur 800m² avec une salle de prière principale 
+                            de 400m², des salles d'enseignement, des espaces d'ablutions modernes et 
+                            un parking de 30 places. Le projet respecte les normes environnementales 
+                            actuelles avec une isolation renforcée et des panneaux solaires.
+                        </p>
+                    </div>
+                    
+                    <div class="content-image">
+                        <img src="https://images.pexels.com/photos/2570145/pexels-photo-2570145.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" 
+                             alt="Plans architecturaux de la mosquée" 
+                             loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Financement -->
+        <section id="financement" class="section section-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Financement du Projet</h2>
+                    <p>Votre contribution fait la différence</p>
+                </div>
+                
+                <!-- Compteur de progression -->
+                <div class="funding-progress">
+                    <div class="progress-counter" 
+                         data-current="35000" 
+                         data-target="100000">
+                        <div class="counter-display">
+                            <span class="counter-current">0</span> €
+                            <span class="counter-separator">sur</span>
+                            <span class="counter-target">100 000</span> €
+                        </div>
+                    </div>
+                    
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-progress="35"></div>
+                    </div>
+                    
+                    <p class="progress-text">35% de l'objectif atteint</p>
+                </div>
+                
+                <!-- Informations bancaires -->
+                <div class="funding-info">
+                    <div class="bank-info">
+                        <h3>Informations bancaires</h3>
+                        <div class="bank-details">
+                            <div class="bank-row">
+                                <span class="label">Bénéficiaire :</span>
+                                <span class="value">Association Mosquée de Tarascon</span>
+                            </div>
+                            <div class="bank-row">
+                                <span class="label">IBAN :</span>
+                                <span class="value">FR76 1234 5678 9012 3456 7890 123</span>
+                            </div>
+                            <div class="bank-row">
+                                <span class="label">BIC :</span>
+                                <span class="value">ABCDEFG1XXX</span>
+                            </div>
+                            <div class="bank-row">
+                                <span class="label">Référence :</span>
+                                <span class="value">DON MOSQUEE TARASCON</span>
+                            </div>
+                        </div>
+                        
+                        <a href="#" class="btn btn-secondary" download>
+                            Télécharger le RIB
+                        </a>
+                    </div>
+                    
+                    <div class="funding-note">
+                        <h4>Important</h4>
+                        <p>
+                            Tous les dons sont déductibles des impôts à hauteur de 66% du montant versé.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Galerie -->
+        <section id="galerie" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Galerie Photos</h2>
+                    <p>Découvrez l'avancement du projet</p>
+                </div>
+                
+                <div class="gallery-grid" id="gallery">
+                    <div class="gallery-item">
+                        <img src="https://images.pexels.com/photos/9470406/pexels-photo-9470406.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" 
+                             alt="Vue d'ensemble du projet"
+                             data-full="https://images.pexels.com/photos/9470406/pexels-photo-9470406.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop"
+                             loading="lazy">
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="https://images.pexels.com/photos/2570145/pexels-photo-2570145.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" 
+                             alt="Plans architecturaux"
+                             data-full="https://images.pexels.com/photos/2570145/pexels-photo-2570145.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop"
+                             loading="lazy">
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="https://images.pexels.com/photos/3764958/pexels-photo-3764958.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" 
+                             alt="Terrain de construction"
+                             data-full="https://images.pexels.com/photos/3764958/pexels-photo-3764958.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop"
+                             loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sections optionnelles commentées -->
+        <!--
+        <section id="histoire" class="section section-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Histoire du Projet</h2>
+                    <p>La naissance d'une idée communautaire</p>
+                </div>
+                <div class="content-text">
+                    <p>Le projet de construction de cette mosquée est né en 2020...</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="transparence" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Transparence Financière</h2>
+                    <p>Détail des postes de dépenses</p>
+                </div>
+                <div class="expenses-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Poste</th>
+                                <th>Budget prévu</th>
+                                <th>Réalisé</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Terrain</td>
+                                <td>30 000 €</td>
+                                <td>30 000 €</td>
+                            </tr>
+                            <tr>
+                                <td>Construction</td>
+                                <td>60 000 €</td>
+                                <td>5 000 €</td>
+                            </tr>
+                            <tr>
+                                <td>Équipements</td>
+                                <td>10 000 €</td>
+                                <td>0 €</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="chantier" class="section section-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Évolution du Chantier</h2>
+                    <p>Suivez les travaux en temps réel</p>
+                </div>
+                <div class="construction-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">Janvier 2024</div>
+                        <div class="timeline-content">Acquisition du terrain</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Mars 2024</div>
+                        <div class="timeline-content">Dépôt du permis de construire</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        -->
+
+        <!-- Section Contact -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Contact</h2>
+                    <p>Pour toute question ou participation</p>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>Email</h3>
+                        <a href="mailto:contact@mosquee-tarascon.fr">contact@mosquee-tarascon.fr</a>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <h3>Téléphone</h3>
+                        <a href="tel:+33123456789">01 23 45 67 89</a>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <h3>Adresse</h3>
+                        <p>
+                            Association Mosquée de Tarascon<br>
+                            12 Avenue de la République<br>
+                            13150 Tarascon
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Mosquée de Tarascon – Association loi 1901</p>
+                <a href="#header" class="back-to-top">Retour en haut</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close">&times;</span>
+            <img id="lightbox-image" src="" alt="">
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="./src/js/menu.js"></script>
+    <script src="./src/js/gallery.js"></script>
+    <script src="./src/js/counter.js"></script>
+    <script src="./src/js/main.js"></script>
+</body>
+</html>
