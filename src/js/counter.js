@@ -220,10 +220,6 @@
         if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
             window.updateCounterValue = updateCounter;
             window.animateToNewValue = animateToNewValue;
-            
-            console.log('Outils de développement du compteur activés:');
-            console.log('- updateCounterValue(current, target)');
-            console.log('- animateToNewValue(newValue)');
         }
     }
     

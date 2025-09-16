@@ -161,6 +161,7 @@
         handleResize();
         updateActiveLinks();
         updateCurrentYear();
+        handleHeroMobileBackground();
         
         // Configuration des événements
         setupEventListeners();
@@ -178,6 +179,33 @@
     
     // === POINT D'ENTRÉE ===
     
+    /**
+     * Gère l'image de background pour la version mobile du hero
+     */
+    function handleHeroMobileBackground() {
+        const hero = document.querySelector('.hero');
+        const heroImage = document.querySelector('.hero-image img');
+        
+        if (hero && heroImage) {
+            function updateBackground() {
+                if (window.innerWidth <= 767) {
+                    // Version mobile : image en background
+                    const imageSrc = heroImage.src;
+                    hero.style.backgroundImage = `url(${imageSrc})`;
+                } else {
+                    // Version desktop : supprimer le background
+                    hero.style.backgroundImage = '';
+                }
+            }
+            
+            // Initialiser
+            updateBackground();
+            
+            // Écouter les changements de taille
+            window.addEventListener('resize', debounce(updateBackground, 250));
+        }
+    }
+
     /**
      * Démarre l'application quand le DOM est prêt
      */

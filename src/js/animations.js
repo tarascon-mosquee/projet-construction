@@ -37,8 +37,6 @@
             const delay = Array.from(el.parentNode.children).indexOf(el) * 100;
             el.style.animationDelay = `${delay}ms`;
         });
-        
-        console.log(`Scroll animations initialisées pour ${animatedElements.length} éléments`);
     }
     
     // Gérer l'intersection des éléments
@@ -224,7 +222,6 @@
         initHeaderScroll();
         initSmoothScroll();
         
-        console.log('Animations et effets de scroll initialisés');
     }
     
     // Initialiser quand le DOM est prêt

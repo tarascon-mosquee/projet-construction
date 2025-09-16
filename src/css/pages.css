@@ -1,5 +1,11 @@
 /* 
- * Pages CSS - Styles spécifiques aux pages
+ * Pages CSS - Styles spéci#projet .content-text h3,
+#projet .content-text h4,
+#projet .content-text p,
+#projet .content-text .objectives-list,
+#projet .content-text .features-list {
+    text-align: center;
+} aux pages
  * Ajustements et styles particuliers pour certaines sections
  */
 
@@ -115,8 +121,11 @@ body {
     transform: rotateY(-1deg);
 }
 
-#galerie .gallery-item:hover {
-    transform: rotateY(0deg) translateY(-8px);
+/* Effets hover uniquement sur desktop */
+@media (min-width: 1025px) {
+    #galerie .gallery-item:hover {
+        transform: rotateY(0deg) translateY(-8px);
+    }
 }
 
 /* Effet de chargement pour les images */
