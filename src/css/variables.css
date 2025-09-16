@@ -100,10 +100,3 @@
     --container-2xl: 1320px;
 }
 
-/* Variables pour le mode sombre (préparation future) */
-@media (prefers-color-scheme: dark) {
-    :root {
-        /* Mode sombre désactivé pour ce projet */
-        /* Garder les mêmes valeurs pour la cohérence */
-    }
-}
