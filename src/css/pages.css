@@ -25,6 +25,24 @@ body {
 
 #projet .content-text {
     padding: var(--space-lg);
+    text-align: center;
+}
+
+#projet .content-text h3,
+#projet .content-text h4,
+#projet .content-text p,
+#projet .content-text .objectives-list,
+#projet .content-text .features-list {
+    text-align: center;
+}
+
+#projet .objectives-list {
+    list-style: none;
+    padding: 0;
+}
+
+#projet .project-stats {
+    text-align: center;
 }
 
 #projet .objectives-list li {

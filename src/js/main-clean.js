@@ -140,17 +140,6 @@
         document.documentElement.classList.toggle('desktop', !isMobile);
     }
     
-    /**
-     * Met à jour automatiquement l'année dans le footer
-     */
-    function updateCurrentYear() {
-        const yearElement = document.getElementById('current-year');
-        if (yearElement) {
-            const currentYear = new Date().getFullYear();
-            yearElement.textContent = currentYear;
-        }
-    }
-    
     // === INITIALISATION ===
     
     /**
@@ -160,7 +149,6 @@
         // Configuration initiale
         handleResize();
         updateActiveLinks();
-        updateCurrentYear();
         
         // Configuration des événements
         setupEventListeners();

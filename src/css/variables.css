@@ -5,9 +5,9 @@
 
 :root {
     /* Couleurs principales */
-    --primary: #198754;
-    --primary-dark: #157347;
-    --primary-light: #20c997;
+    --primary: #3498DB;
+    --primary-dark: #2980B9;
+    --primary-light: #5DADE2;
     
     /* Couleurs de texte */
     --text: #212529;
@@ -21,7 +21,7 @@
     --border: #dee2e6;
     
     /* Couleurs d'état */
-    --success: #198754;
+    --success: #3498DB;
     --warning: #ffc107;
     --danger: #dc3545;
     --info: #0dcaf0;

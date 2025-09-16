@@ -1,12 +1,12 @@
 /* 
- * Menu JS - Gestion de la navigation mobile
- * Toggle du menu hamburger et navigation fluide
+ * Menu JS - Gestion de la navigation mobile et desktop
+ * Fonctionnalités : Menu burger, navigation fluide, liens actifs
  */
 
 (function() {
     'use strict';
     
-    // Variables du menu
+    // Sélection des éléments DOM
     const menuToggle = document.getElementById('navbar-toggle');
     const menuNav = document.getElementById('navbar-menu');
     const navLinks = document.querySelectorAll('.nav-link');
@@ -17,7 +17,7 @@
     overlay.className = 'navbar-overlay';
     document.body.appendChild(overlay);
     
-    // Toggle du menu mobile
+    // Basculer l'état du menu mobile
     function toggleMenu() {
         const isOpen = menuNav.classList.contains('active');
         
@@ -96,7 +96,7 @@
         }
     }
     
-    // Event listeners
+    // Configuration des écouteurs d'événements
     if (menuToggle) {
         menuToggle.addEventListener('click', toggleMenu);
     }
