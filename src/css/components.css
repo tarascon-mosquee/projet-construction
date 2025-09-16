@@ -32,6 +32,7 @@
 
 .navbar {
     padding: 0;
+    
 }
 
 .navbar .container {
@@ -45,11 +46,11 @@
     text-align: left;
     flex: 0 1 auto;
     margin-right: auto;
-    max-width: 60%;
+    max-width: 70%;
 }
 
 .navbar-brand h1 {
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-lg);
     font-weight: var(--font-weight-bold);
     color: var(--primary);
     margin: 0;
@@ -57,7 +58,7 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: 100%;
+    line-height: 1.2;
 }
 
 .navbar-toggle {
@@ -159,11 +160,11 @@
 @media (max-width: 767px) {
     .navbar-brand {
         text-align: left;
+        max-width: 75%;
     }
     
     .navbar-brand h1 {
-        font-size: var(--font-size-lg);
-        max-width: 200px;
+        font-size: var(--font-size-base);
         text-align: left;
     }
     
@@ -309,7 +310,7 @@
         z-index: 3;
         text-align: center;
         padding: var(--space-4xl) var(--space-md);
-        min-height: 100vh;
+        /* min-height: 100vh; */
         display: flex;
         align-items: center;
         justify-content: center;

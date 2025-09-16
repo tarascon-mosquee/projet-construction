@@ -10,15 +10,8 @@
  */
 
 /* === AJUSTEMENTS SECTION ACCUEIL === */
-body {
-    padding-top: 80px; /* Compense la navbar fixe */
-}
 
-@media (max-width: 767px) {
-    body {
-        padding-top: 70px;
-    }
-}
+
 
 /* === SECTION PROJET === */
 #projet {
